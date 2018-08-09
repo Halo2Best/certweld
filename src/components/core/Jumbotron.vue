@@ -19,6 +19,7 @@
           class="z+"
 
         >
+
           <v-layout align-center>
               <v-flex
                 text-xs-center
