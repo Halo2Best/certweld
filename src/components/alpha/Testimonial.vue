@@ -23,12 +23,16 @@
 </template>
 
 <script>
+  import SplitText from '../../plugins/split-text'
   export default {
     props: {
       author: String,
       dark: Boolean,
       quote: String,
       title: String
+    },
+    mounted () {
+      SplitText('.alpha-testimonial p', this.quote)
     }
   }
 </script>
@@ -39,29 +43,29 @@
       align-items: flex-start
       display: flex
       justify-content: space-between
-    
+
     &__footer-bar
       height: 4px
       margin: 20px 0 20px auto
       width: 100px
-      
+
     .v-icon
       justify-content: flex-end
       flex: 0 1 10%
       margin-top: -8px
       transform: rotate(180deg)
-    
+
     p
       flex: 1 1 85%
       line-height: 2
-      
+
     footer
       flex: 1 0 auto
       text-align: right
-      
+
       .title
         font-weight: 300
-        
+
     &--dark
       color: #fff
 </style>

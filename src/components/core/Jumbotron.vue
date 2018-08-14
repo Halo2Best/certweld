@@ -26,11 +26,6 @@
                 :key="$route.path"
               >
                 <h1 class="display-2 white--text" v-html="title" />
-                <div
-                  class="subheading white--text"
-                  v-html="subTitle"
-                  v-if="subTitle"
-                />
               </v-flex>
           </v-layout>
         </v-container>
@@ -70,13 +65,17 @@
     }
   }
 </script>
-<style>
+<style scoped>
   .bg-gradient{
     width: 100%;
     position: absolute;
     top:0;
     left:0;
-    background: linear-gradient(to bottom, rgba(80, 90, 100, .5), rgba(10, 20, 30, .5));
+    background: linear-gradient(to bottom,
+    rgba(50, 50, 50, 0.8),
+    rgba(75, 75, 75, 0.8),
+    rgba(150, 150, 150, 0.8),
+    rgba(255, 255, 255, 1))
   }
   .z+{
     z-index: 10;

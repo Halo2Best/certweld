@@ -4,12 +4,12 @@
       <v-layout
         row
         wrap
-        class="blue-grey darken-2 fill-height"
+        class="grey darken-3 fill-height"
       >
         <v-flex
           xs12
           sm3
-          class="pa-5 blue-grey darken-3"
+          class="pa-5 grey darken-4"
         >
           <h5 class="title pb-3" v-text="company" />
           <ul>
@@ -43,7 +43,7 @@
             tile
             flat
             dark
-            class="blue-grey darken-4 text-xs-center"
+            class="grey darken-4 text-xs-center"
           >
             <v-card-text>
               <slot />

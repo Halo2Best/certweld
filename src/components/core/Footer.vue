@@ -4,8 +4,8 @@
     :social="social"
     :categories="categories"
   >
-    <span>
-      &copy; 2017
+    <span >
+      &copy; 2018
       {{ $t('Layout.Footer.company') }}
       &mdash;
       {{ $t('Layout.Footer.rights') }}

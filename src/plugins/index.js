@@ -1,3 +1,5 @@
 import './axios'
 import './vuetify'
 import './mdi'
+import './progressive-images'
+import './split-text'
