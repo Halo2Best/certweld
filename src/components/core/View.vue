@@ -14,10 +14,11 @@
   import TweenMax from 'gsap'
   const particlesJS = window.particlesJS
   let pJS
+
   export default {
     metaInfo () {
       return {
-        titleTemplate: '%s — Alpha Theme'
+        titleTemplate: '%s'
       }
     },
     watch: {
