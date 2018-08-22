@@ -1,4 +1,5 @@
 {
+  "lang": "en",
   "name": "Certified Welding",
   "short_name": "Certified Welding",
   "icons": [
@@ -15,5 +16,5 @@
   ],
   "theme_color": "#ffffff",
   "background_color": "#ffffff",
-  "start_url": "https://certweld.co.nz"
+  "start_url": "/index.html"
 }
