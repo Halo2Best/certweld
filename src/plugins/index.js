@@ -1,7 +1,6 @@
 import './axios'
 import './vuetify'
 import './video'
-import './sound'
 import './gsap'
 import './position'
 import './maps'
