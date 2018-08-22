@@ -2,6 +2,10 @@
 // (runtime-only or standalone) has been set in webpack.base.conf with an alias.
 import Vue from 'vue'
 
+// Transitions
+
+import { createSimpleTransition } from 'vuetify/es5/util/helpers'
+
 // Components
 import './components'
 
@@ -21,6 +25,24 @@ import store from '@/store'
 sync(store, router)
 
 Vue.config.productionTip = false
+
+const qFadeTransition = createSimpleTransition('q-fade-transition')
+
+Vue.component('q-fade-transition', qFadeTransition)
+
+Vue.mixin({
+  data () {
+    return {
+      get webp () {
+        return document.createElement('canvas').toDataURL('image/webp').indexOf('data:image/webp') === 0
+      },
+      playSound () {
+        this.audio = this.audio || new Audio('/static/sound/click.mp3')
+        this.audio.play()
+      }
+    }
+  }
+})
 
 /* eslint-disable no-new */
 new Vue({

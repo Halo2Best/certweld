@@ -1,5 +1,6 @@
 <template>
   <div
+    v-scroll="testimonialScroll"
     class="alpha-testimonial"
     :class="[dark ? 'alpha-testimonial--dark' : '']"
   >
@@ -23,7 +24,8 @@
 </template>
 
 <script>
-  import SplitText from '../../plugins/split-text'
+  /* eslint-disable no-undef */
+
   export default {
     props: {
       author: String,
@@ -31,14 +33,23 @@
       quote: String,
       title: String
     },
-    mounted () {
-      SplitText('.alpha-testimonial p', this.quote)
+    methods: {
+      testimonialScroll (e) {
+        let el = this.$el
+        let pos = el.getBoundingClientRect().top
+        if (!this.showTestimonial && pos < (window.innerHeight / 1.1)) {
+          this.showTestimonial = true
+          TweenMax.fromTo(el, 1.7, {y: 70, autoAlpha: 0}, {y: 0, autoAlpha: 1})
+        }
+      }
     }
   }
 </script>
 
 <style lang="stylus">
   .alpha-testimonial
+    visibility: hidden
+    opacity 0
     &__content
       align-items: flex-start
       display: flex
@@ -58,6 +69,7 @@
     p
       flex: 1 1 85%
       line-height: 2
+
 
     footer
       flex: 1 0 auto

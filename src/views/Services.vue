@@ -1,50 +1,60 @@
 <template>
-  <v-container fill-height>
-    <v-layout wrap pb-5>
-      <v-flex md4 hidden-sm-and-down>
-        <v-card img="/static/img/feature1.png" height="250px" />
-      </v-flex>
-      <v-flex xs12 md8 :pl-5="$vuetify.breakpoint.mdAndUp">
-        <h2 class="title mb-3" v-text="$t('Views.Services.heading1')" />
-        <p v-text="$t('Views.Services.headingText1')" />
-      </v-flex>
-      <v-flex xs12 sm8 md6 mb-5 class="py-5">
-        <h2 class="title mb-3" v-text="$t('Views.Services.heading2')" />
-        <p v-text="$t('Views.Services.headingText2a')" />
-        <p v-text="$t('Views.Services.headingText2b')" />
-        <p v-text="$t('Views.Services.headingText2c')" />
-      </v-flex>
-      <v-flex xs12>
-        <v-layout justify-center>
-          <v-flex xs12 sm10 md8>
-            <alpha-testimonial
-              :author="testimonial.author"
-              :title="testimonial.title"
-              :quote="testimonial.quote"
-            />
-          </v-flex>
-        </v-layout>
-      </v-flex>
-    </v-layout>
-  </v-container>
+  <div>
+    <alpha-card-layout
+      :items="items"
+    ></alpha-card-layout>
+  <alpha-hero
+    :src="'/static/img/cert-weld/narek/c' + (webp ? '.webp' : '.jpg')"
+    alt="narek image"
+    :height="$vuetify.breakpoint.mdAndUp ? 500 : 'auto'"
+    :jumbotron="false"
+    dark
+    class="mt-5 bg-gradient"
+  >
+    <v-container
+      fill-height
+      grid-list-xl
+    >
+      <v-layout
+        align-center
+        justify-space-around
+        wrap
+      >
+        <v-flex
+          xs10
+          md6
+        >
+          <alpha-testimonial
+            :author="testimonials[2].author"
+            :title="testimonials[2].title"
+            :quote="testimonials[2].quote"
+          />
+        </v-flex>
+      </v-layout>
+    </v-container>
+  </alpha-hero>
+</div>
 </template>
-
 <script>
+  /* eslint-disable no-undef */
+
+  import AlphaCardLayout from '../components/alpha/CardLayout'
   export default {
+    components: {AlphaCardLayout},
     metaInfo: {
-      title: 'Services',
+      title: 'Welding Services',
       meta: [
-        { name: 'description', content: 'Customized vue-cli templates for Vue and Vuetify' }
+        {name: 'description', content: 'Certified Welding offers a wide range of engineering expertise.'}
       ]
     },
     computed: {
-      testimonial () {
-        return {
-          quote: this.$t('Views.Services.testimonial.quote'),
-          author: this.$t('Views.Services.testimonial.author'),
-          title: this.$t('Views.Services.testimonial.title')
-        }
+      items () {
+        return this.$t('Views.Services.items')
+      },
+      testimonials () {
+        return this.$t('Views.Home.testimonials')
       }
     }
   }
 </script>
+

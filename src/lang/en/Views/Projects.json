@@ -1,60 +1,59 @@
 {
   "jumbotronTitle": "WHAT WE'VE DONE",
-  "jumbotronSubTitle": "Relentlessly advancing our clients\" visions, beyond their expectations",
+  "jumbotronSubTitle": "Check out some of the projects Certified Welding has put into the world.",
   "carouselImages": [
-    "static/img/welding/1.jpg",
-    "static/img/welding/2.jpg",
-    "static/img/welding/3.jpg",
-    "static/img/welding/4.jpg"
+
   ],
-  "categories": [
+  "items": [
     {
-      "text": "All",
-      "filter": null
+      "heading1": "Narek",
+      "headingText1": "Focus On What Drives Your Business",
+      "heading2": "Focus On What Drives Your Business",
+      "headingText2a": "Lorem ipsum dolor sit amet, ea mutat tation constituam per, mei error ocurreret definiebas ne. Te harum constituto inciderint his. Vis no delenit mediocritatem. His et debet possim perpetua, assum argumentum ne quo, constituto eloquentiam sea ne. Ne has ludus graecis fabellas.",
+      "image": "static/img/cert-weld/narek/preview/c",
+      "testimonial": {
+        "author": "Jay Oakerson",
+        "title": "CEO Abocado",
+        "quote": "With Alpha Software powering all of our customer-facing services and ASCC, helping us monitor and understand application performance, Abocado is in great shape to create and release new products."
+      }
     },
     {
-      "text": "Skyscrapers",
-      "filter": 1
+      "heading1": "Pumps",
+      "headingText1": "Focus On What Drives Your Business",
+      "heading2": "Focus On What Drives Your Business",
+      "headingText2a": "Lorem ipsum dolor sit amet, ea mutat tation constituam per, mei error ocurreret definiebas ne. Te harum constituto inciderint his. Vis no delenit mediocritatem. His et debet possim perpetua, assum argumentum ne quo, constituto eloquentiam sea ne. Ne has ludus graecis fabellas.",
+      "image": "static/img/cert-weld/concrete-pumps/preview/e",
+      "testimonial": {
+        "author": "Jay Oakerson",
+        "title": "CEO Abocado",
+        "quote": "With Alpha Software powering all of our customer-facing services and ASCC, helping us monitor and understand application performance, Abocado is in great shape to create and release new products."
+      }
     },
     {
-      "text": "Government",
-      "filter": 2
+      "heading1": "Stairs",
+      "headingText1": "Focus On What Drives Your Business",
+      "heading2": "Focus On What Drives Your Business",
+      "headingText2a": "Lorem ipsum dolor sit amet, ea mutat tation constituam per, mei error ocurreret definiebas ne. Te harum constituto inciderint his. Vis no delenit mediocritatem. His et debet possim perpetua, assum argumentum ne quo, constituto eloquentiam sea ne. Ne has ludus graecis fabellas.",
+      "image": "static/img/cert-weld/stairs/preview/b",
+      "testimonial": {
+        "author": "Jay Oakerson",
+        "title": "CEO Abocado",
+        "quote": "With Alpha Software powering all of our customer-facing services and ASCC, helping us monitor and understand application performance, Abocado is in great shape to create and release new products."
+      }
     },
     {
-      "text": "Customized",
-      "filter": 3
-    }
-  ],
-  "projects": [
-    {
-      "name": "Lorem Ipsum",
-      "img": "project1.jpg",
-      "categories": [1, 3]
+      "heading1": "Hand Rails",
+      "headingText1": "Focus On What Drives Your Business",
+      "heading2": "Focus On What Drives Your Business",
+      "headingText2a": "Lorem ipsum dolor sit amet, ea mutat tation constituam per, mei error ocurreret definiebas ne. Te harum constituto inciderint his. Vis no delenit mediocritatem. His et debet possim perpetua, assum argumentum ne quo, constituto eloquentiam sea ne. Ne has ludus graecis fabellas.",
+      "image": "static/img/cert-weld/h-and-b/preview/c"
     },
     {
-      "name": "Lorem Ipsum",
-      "img": "project2.jpg",
-      "categories": [2, 3]
-    },
-    {
-      "name": "Lorem Ipsum",
-      "img": "project3.jpg",
-      "categories": [4, 3]
-    },
-    {
-      "name": "Lorem Ipsum",
-      "img": "project4.jpg",
-      "categories": [1, 2]
-    },
-    {
-      "name": "Lorem Ipsum",
-      "img": "project5.jpg",
-      "categories": [2, 4]
-    },
-    {
-      "name": "Lorem Ipsum",
-      "img": "project6.jpg",
-      "categories": [1, 4]
+      "heading1": "Moulds",
+      "headingText1": "Focus On What Drives Your Business",
+      "heading2": "Focus On What Drives Your Business",
+      "headingText2a": "Lorem ipsum dolor sit amet, ea mutat tation constituam per, mei error ocurreret definiebas ne. Te harum constituto inciderint his. Vis no delenit mediocritatem. His et debet possim perpetua, assum argumentum ne quo, constituto eloquentiam sea ne. Ne has ludus graecis fabellas.",
+      "image": "static/img/cert-weld/concrete-mould/preview/e"
     }
   ]
 }

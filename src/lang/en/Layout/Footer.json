@@ -7,38 +7,47 @@
   "rights": "All Rights reserved.",
   "social": [
     {
+      "icon": "home",
+      "text": "Home",
+      "to": "/"
+    },
+    {
+      "icon": "build",
       "text": "Services",
-      "href": "/services"
+      "to": "/services"
     },
     {
+      "icon": "settings",
       "text": "Projects",
-      "href": "/projects"
+      "to": "/projects"
     },
     {
-      "text": "Our Team",
-      "href": "/team"
+      "icon": "phone",
+      "text": "Contact",
+      "to": "/contact"
     },
     {
-      "text": "Commitment to the Community",
-      "href": "/community"
+      "icon": "photo_album",
+      "text": "Gallery",
+      "to": "/gallery"
     }
-
   ],
   "categories": [
     {
+      "title": "More About Us",
       "items": [
-        { "text": "Success Stories", "href": "javascript:;" },
-        { "text": "Case Studies", "href": "javascript:;" },
-        { "text": "Testimonials", "href": "javascript:;" },
-        { "text": "Press Room", "href": "javascript:;" }
+        { "icon": "", "text": "Success Stories", "href": "javascript:;" },
+        { "icon": "", "text": "Case Studies", "href": "javascript:;" },
+        { "icon": "", "text": "Testimonials", "href": "javascript:;" },
+        { "icon": "", "text": "Press Room", "href": "javascript:;" }
       ]
     },
     {
+      "title": "Partners",
       "items": [
-        { "text": "Partners", "href": "javascript:;" },
-        { "text": "JBM Construction", "href": "javascript:;" },
-        { "text": "Macarthy Equipment", "href": "javascript:;" },
-        { "text": "Elite Construction Management", "href": "javascript:;" }
+        { "icon": "", "text": "JBM Construction", "href": "javascript:;" },
+        { "icon": "", "text": "Macarthy Equipment", "href": "javascript:;" },
+        { "icon": "", "text": "Elite Construction Management", "href": "javascript:;" }
       ]
     }
   ]

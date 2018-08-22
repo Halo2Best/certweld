@@ -1,0 +1,272 @@
+{
+  "jumbotronTitle": "TAKE A LOOK",
+  "jumbotronSubTitle": "Scroll or click through the pictures below to see what we've done.",
+  "categories": [
+    {
+      "text": "All",
+      "filter": null
+    },
+    {
+      "text": "Installation",
+      "filter": 1
+    },
+    {
+      "text": "Workshop",
+      "filter": 2
+    },
+    {
+      "text": "Vehicles",
+      "filter": 3
+    },
+    {
+      "text": "Moulds",
+      "filter": 4
+    },
+    {
+      "text": "Pumps",
+      "filter": 5
+    },
+    {
+      "text": "Structural",
+      "filter": 6
+    },
+    {
+      "text": "Stairs",
+      "filter": 7
+    }
+  ],
+  "path": "static/img/cert-weld/",
+  "projects": [
+    {
+      "name": "concrete-mould-a",
+      "path": "concrete-mould/",
+      "img": "a",
+      "categories": [
+        4
+      ]
+    },
+    {
+      "name": "concrete-mould-b",
+      "path": "concrete-mould/",
+      "img": "b",
+      "categories": [
+        4
+      ]
+    },
+    {
+      "name": "concrete-mould-c",
+      "path": "concrete-mould/",
+      "img": "c",
+      "categories": [
+        4,
+        2
+      ]
+    },
+    {
+      "name": "concrete-mould-d",
+      "path": "concrete-mould/",
+      "img": "d",
+      "categories": [
+        4,
+        2
+      ]
+    },
+    {
+      "name": "concrete-mould-e",
+      "path": "concrete-mould/",
+      "img": "e",
+      "categories": [
+        2,
+        4
+      ]
+    },
+    {
+      "name": "concrete-pumps-a",
+      "path": "concrete-pumps/",
+      "img": "a",
+      "categories": [
+        3,
+        5
+      ]
+    },
+    {
+      "name": "concrete-pumps-b",
+      "path": "concrete-pumps/",
+      "img": "b",
+      "categories": [
+        3,
+        5
+      ]
+    },
+    {
+      "name": "concrete-pumps-c",
+      "path": "concrete-pumps/",
+      "img": "c",
+      "categories": [
+        3,
+        5
+      ]
+    },
+    {
+      "name": "concrete-pumps-d",
+      "path": "concrete-pumps/",
+      "img": "d",
+      "categories": [
+        3,
+        5
+      ]
+    },
+    {
+      "name": "concrete-pumps-e",
+      "path": "concrete-pumps/",
+      "img": "e",
+      "categories": [
+        3,
+        5
+      ]
+    },
+    {
+      "name": "h-and-b-a",
+      "path": "h-and-b/",
+      "img": "a",
+      "categories": [
+        1
+      ]
+    },
+    {
+      "name": "h-and-b-b",
+      "path": "h-and-b/",
+      "img": "b",
+      "categories": [
+        1
+      ]
+    },
+    {
+      "name": "h-and-b-c",
+      "path": "h-and-b/",
+      "img": "c",
+      "categories": [
+        1
+      ]
+    },
+    {
+      "name": "narek-a",
+      "path": "narek/",
+      "img": "a",
+      "categories": [
+        1
+      ]
+    },
+    {
+      "name": "narek-b",
+      "path": "narek/",
+      "img": "b",
+      "categories": [
+        1
+      ]
+    },
+    {
+      "name": "narek-c",
+      "path": "narek/",
+      "img": "c",
+      "categories": [
+        1
+      ]
+    },
+    {
+      "name": "narek-d",
+      "path": "narek/",
+      "img": "d",
+      "categories": [
+        1,
+        6
+      ]
+    },
+    {
+      "name": "stairs-a",
+      "path": "stairs/",
+      "img": "a",
+      "categories": [
+        1,
+        7
+      ]
+    },
+    {
+      "name": "stairs-b",
+      "path": "stairs/",
+      "img": "b",
+      "categories": [
+        2,
+        7
+      ]
+    },
+    {
+      "name": "stairs-c",
+      "path": "stairs/",
+      "img": "c",
+      "categories": [
+        2,
+        7
+      ]
+    },
+    {
+      "name": "structural-steel-a",
+      "path": "structural-steel/",
+      "img": "a",
+      "categories": [
+        6
+      ]
+    },
+    {
+      "name": "structural-steel-b",
+      "path": "structural-steel/",
+      "img": "b",
+      "categories": [
+        6
+      ]
+    },
+    {
+      "name": "structural-steel-c",
+      "path": "structural-steel/",
+      "img": "c",
+      "categories": [
+        6
+      ]
+    },
+    {
+      "name": "structural-steel-d",
+      "path": "structural-steel/",
+      "img": "d",
+      "categories": [
+        6
+      ]
+    },
+    {
+      "name": "transport-a",
+      "path": "transport/",
+      "img": "a",
+      "categories": [
+        2,
+        3
+      ]
+    },
+    {
+      "name": "transport-b",
+      "path": "transport/",
+      "img": "b",
+      "categories": [
+        2,
+        3
+      ]
+    },
+    {
+      "name": "transport-c",
+      "path": "transport/",
+      "img": "c",
+      "categories": [
+        2,
+        3
+      ]
+    }
+  ]
+}

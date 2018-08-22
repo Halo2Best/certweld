@@ -13,6 +13,10 @@ export default [
     view: 'Projects'
   },
   {
+    path: '/gallery',
+    view: 'Gallery'
+  },
+  {
     path: '/services',
     view: 'Services'
   }

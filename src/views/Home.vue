@@ -1,67 +1,32 @@
 <template>
   <div>
-
-    <v-container fill-height>
-
+    <!--<v-container>-->
+      <!--<v-layout>-->
+        <!--<v-flex align-center text-xs-center>-->
+          <!--<h1 class="mb-3">OFFERING A WEALTH OF ENGINEERING EXPERIENCE AND KNOWLEDGE</h1>-->
+          <!--<h3>Certified Welding is the right choice for you</h3>-->
+        <!--</v-flex>-->
+      <!--</v-layout>-->
+    <!--</v-container>-->
+    <v-container fill-height class="max-view-width">
       <v-layout
         justify-center
         align-center
         wrap
       >
-
         <v-flex dark xs12 mb-5>
           <alpha-card-feature :features="cardFeatures"/>
         </v-flex>
-
-        <v-container grid-list-xl pa-0>
-          <v-layout
-            row
-            wrap
-            justify-center
-            align-center
-          >
-            <v-flex
-              xs12
-              sm3
-            >
-              <h2 class="text-md-center">Testimonials</h2>
-            </v-flex>
-          </v-layout>
-        </v-container>
-
-        <v-container grid-list-xl pa-0>
-          <v-layout
-            row
-            wrap
-            justify-center
-            align-start
-          >
-            <v-flex
-              xs12
-              sm3
-              align-start
-              v-for="(testimonial, i) in testimonials"
-              :class="['mi--' + i]"
-              :key="i"
-            >
-              <alpha-testimonial
-                :author="testimonial.author"
-                :title="testimonial.title"
-                :quote="testimonial.quote"
-              />
-            </v-flex>
-          </v-layout>
-        </v-container>
-
       </v-layout>
     </v-container>
 
     <alpha-hero
-      src="/static/img/welding/contact-bw.jpg"
+      v-scroll="onScrollBotImg"
+      :src="lazyLoad()"
       :height="$vuetify.breakpoint.mdAndUp ? 500 : 'auto'"
       :jumbotron="false"
       dark
-      class="mt-5 bg-gradient"
+      class="mt-5 bg-gradient elevation-6"
     >
       <v-container
         fill-height
@@ -71,15 +36,17 @@
           align-center
           justify-space-around
           wrap
+
         >
           <v-flex
             xs10
             md6
+
           >
             <alpha-testimonial
-              :author="testimonials[2].author"
-              :title="testimonials[2].title"
-              :quote="testimonials[2].quote"
+              :author="testimonials[0].author"
+              :title="testimonials[0].title"
+              :quote="testimonials[0].quote"
             />
           </v-flex>
         </v-layout>
@@ -89,25 +56,39 @@
 </template>
 
 <script>
-  import TweenMax from 'gsap/TweenMax'
+  /* eslint-disable no-undef */
 
   export default {
     metaInfo: {
-      title: 'Vuetify Alpha',
+      title: 'Certified Welding',
       meta: [
-        {name: 'description', content: 'Customized vue-cli templates for Vue and Vuetify'}
+        {name: 'description', content: 'Serious Welding for serious projects, from structural steel to concrete moulds, Certified Welding does it all.'}
       ]
     },
+    data () {
+      return {
+        botImgShown: false,
+        showBotImg: false
+      }
+    },
     mounted () {
-      TweenMax.staggerFromTo('.v-card', 1, {y: 40, autoAlpha: 0}, {y: 0, autoAlpha: 1}, 0.2)
+      let $this = this
+      setTimeout(() => {
+        $this.botImgShown = true
+        $this.showBotImg = true
+      }, 3000)
     },
     methods: {
-      onScroll () {
-        this.isScrolling = (window.pageYOffset ||
-          document.documentElement.scrollTop || 0) > (this.$el.clientHeight || 100)
+      lazyLoad () {
+        return this.botImgShown ? '/static/img/cert-weld/narek/c' + (this.webp ? '.webp' : '.jpg') : ''
       },
-      cardScroll () {
-        console.log('s')
+      onScrollBotImg () {
+        if (this.showBotImg && !this.botImgShown) {
+          this.botImgShown = true
+        }
+        this.showBotImg = (window.pageYOffset ||
+          document.documentElement.scrollTop || 0) >
+          ((this.$el.getBoundingClientRect().top - window.innerHeight) || 100)
       }
     },
     computed: {

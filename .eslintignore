@@ -3,4 +3,5 @@
 /dist/
 /*.js
 /src/plugins/particles.js
+/src/plugins/position.js
 /test/unit/coverage/

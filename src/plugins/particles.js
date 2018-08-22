@@ -501,8 +501,10 @@ var pJS = function(tag_id, params){
   };
 
 
-  pJS.fn.particlesCreate = function(){
-    for(var i = 0; i < pJS.particles.number.value; i++) {
+  pJS.fn.particlesCreate = function(num){
+    let area = pJS.canvas.h * pJS.canvas.w
+    num = (area / 28000)
+    for(var i = 0; i < num ; i++) {
       pJS.particles.array.push(new pJS.fn.particle(pJS.particles.color, pJS.particles.opacity.value));
     }
   };

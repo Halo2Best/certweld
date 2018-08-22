@@ -5,6 +5,7 @@
       v-for="(item, i) in images"
       :key="i"
       :src="item"
+      :alt="item + i"
       gradient="to bottom, rgba(70, 90, 160, .85), rgba(30, 40, 30, .85)"
     ></v-carousel-item>
 

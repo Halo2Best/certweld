@@ -2,6 +2,7 @@
   <v-parallax
     :height="height"
     :src="src"
+    :alt="'background image' + src"
     :class="classes"
   >
     <slot name="default" />

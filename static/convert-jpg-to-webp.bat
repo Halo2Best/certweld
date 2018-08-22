@@ -1,0 +1,1 @@
+for /r /d %%a in (*) do mogrify -format webp "%%~a\*.jpg"
