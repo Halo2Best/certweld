@@ -1,5 +1,5 @@
 <template>
-  <video-bg
+  <alpha-video-background
     id="jumbotron"
     class="vh elevation-6"
     :sources="[heroVideo + '.webm', heroVideo + '.mp4', heroVideo + '.ogv']" :img="heroImage" :alt="heroImage">
@@ -44,13 +44,15 @@
         </v-layout>
       </v-container>
       </q-fade-transition>
-  </video-bg>
+  </alpha-video-background>
 </template>
 
 <script>
   /* eslint-disable no-undef */
 
+  import AlphaVideoBackground from '../alpha/VideoBackground'
   export default {
+    components: {AlphaVideoBackground},
     data: () => ({
       scrolled: null,
       isBooted: null
@@ -116,7 +118,14 @@
         } else {
           size = '1920'
         }
-        return (path + name + size)
+        // if (this.$store.state.app.lazyLoaded) {
+        //   let $this = this
+        //   setTimeout(() => {
+        //     let video = $this.$el.querySelector('video')
+        //     video.play()
+        //   }, 100)
+        // }
+        return this.$store.state.app.lazyLoaded ? (path + name + size) : ''
       }
     },
     mounted () {
