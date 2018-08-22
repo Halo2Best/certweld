@@ -24,6 +24,9 @@
     },
     mounted () {
       let $this = this
+      document.body.addEventListener('click', () => {
+        $this.setLazyLoaded(true)
+      })
       clearTimeout(this.delayAnimated)
       this.delayAnimated = setTimeout(() => {
         $this.setLazyLoaded(true)

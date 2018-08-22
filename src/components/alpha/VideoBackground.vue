@@ -43,6 +43,7 @@
       this.setImageUrl()
       this.setContainerHeight()
       window.addEventListener('resize', this.resize)
+      document.body.addEventListener('click', this.playVideo)
     },
 
     beforeDestroy () {
