@@ -1,6 +1,5 @@
 import './axios'
 import './vuetify'
-import './progressive-images'
 import './video'
 import './sound'
 import './gsap'
