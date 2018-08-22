@@ -1,6 +1,6 @@
 <template>
   <section class="VideoBg">
-    <video v-if="lazyLoaded" autoplay loop muted ref="video">
+    <video v-if="lazyLoaded" playsinline autoplay loop muted ref="video">
       <source v-for="source in sources" :src="source" :type="getMediaType(source)">
     </video>
     <div class="VideoBg__content">
@@ -40,6 +40,7 @@
       }
     },
     mounted () {
+      console.log(this.md.os())
       this.setImageUrl()
       this.setContainerHeight()
       window.addEventListener('resize', this.resize)

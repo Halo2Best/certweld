@@ -1,6 +1,7 @@
 // The Vue build version to load with the `import` command
 // (runtime-only or standalone) has been set in webpack.base.conf with an alias.
 import Vue from 'vue'
+import MobileDetect from 'mobile-detect'
 
 // Transitions
 
@@ -39,7 +40,8 @@ Vue.mixin({
       playSound () {
         this.audio = this.audio || new Audio('/static/sound/click.mp3')
         this.audio.play()
-      }
+      },
+      md: new MobileDetect(window.navigator.userAgent)
     }
   }
 })
