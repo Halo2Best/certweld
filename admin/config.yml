@@ -63,7 +63,6 @@ collections:
     - {label: Jumbotron Title, name: jumbotronTitle, widget: string}
     - {label: Jumbotron Sub Title, name: jumbotronSubTitle, widget: string}
     - {label: Testimonial Title, name: testimonialsTitle, widget: string}
-    - {label: Button Text, name: submit, widget: string}
     - label: Testimonials
       name: testimonials
       widget: list
