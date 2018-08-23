@@ -37,7 +37,7 @@
       }, 1000)
     },
     watch: {
-      $route (to, from) {
+      $route () {
         let $this = this
         clearTimeout(this.delayAnimated)
         this.delayAnimated = setTimeout(() => {
