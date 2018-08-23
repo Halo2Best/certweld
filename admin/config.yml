@@ -16,15 +16,15 @@ collections:
     fields:
     - {label: Jumbotron Title, name: jumbotronTitle, widget: string}
     - {label: Jumbotron Sub Title, name: jumbotronSubTitle, widget: string}
-    - label: Testimonials,
+    - label: Testimonials
       name: testimonialsTitle
       widget: list
       fields:
       - {label: Author, name: author, widget: string}
       - {label: Title, name: title, widget: string}
       - {label: Quote, name: quote, widget: string}
-    - label: cardFeatures
-      name: jumbotronSubTitle
+    - label: Card Features
+      name: cardFeatures
       widget: list
       fields:
         - {label: Name,name: name, widget: string}
