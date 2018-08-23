@@ -14,11 +14,15 @@ collections:
   - file: src/lang/en/Layout/View.json
     label: View
     name: View
-    widget: list
+    widget: object
     fields:
-    - {label: Route, name: to, widget: string}
-    - {label: Text, name: text, widget: string}
-    - {label: Icon, name: icon, widget: string}
+      label: Views or Pages
+      name: items
+      widget: list
+      fields:
+      - {label: Route, name: to, widget: string}
+      - {label: Text, name: text, widget: string}
+      - {label: Icon, name: icon, widget: string}
 
   - file: src/lang/en/Home.json
     label: Home
