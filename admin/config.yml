@@ -14,7 +14,6 @@ collections:
   - file: src/lang/en/Layout/View.json
     label: View
     name: View
-    widget: object
     fields:
       label: Views or Pages
       name: items
