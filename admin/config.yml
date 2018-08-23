@@ -54,6 +54,7 @@ collections:
       - label: Categories
         name: categories
         widget: list
+        fields:
         - {label: Title, name: title, widget: string}
         - label: Items
           name: items
