@@ -4,31 +4,14 @@ backend:
 
 publish_mode: editorial_workflow
 media_folder: "static"
-public_folder: "static"
+public_folder: ""
 
 collections:
-- name: "home" # Used in routes, e.g. /admin/collections/recipe
-  label: "home" # Used in the UI
-  folder: "src/lang/en/Views/Home" # The path to the folder where the documents are stored
-  create: true # Allow users to create new documents in this collection
-  slug: "{{slug}}" # Filename template i.e. title.md
-  fields: # The fields for each document, usually in front matter
-  - {label: "jumbotronTitle", name: "jumbotronTitle", widget: "string"}
-#  - label: "Image"
-#    name: "image"
-#    widget: "object"
-#    fields:
-#    - {label: "Text", name: "text", widget: "string"}
-#    - {label: "URL", name: "url", widget: "image"}
-#  - label: "Ingredients"
-#    name: "ingredients"
-#    widget: "list"
-#    fields:
-#    - label: "Ingredient"
-#      name: "ingredient"
-#      widget: "object"
-#      fields:
-#      - {label: "Amount", name: "amount", widget: "number"}
-#      - {label: "Unit", name: "unit", widget: "select", options: ["", "dl", "l", "kg"]}
-#      - {label: "Name", name: "name", widget: "string"}
-  - {label: "Body", name: "body", widget: "markdown"}
+- name: "pages"
+  label: "Pages"
+  files:
+  - file: "src/lang/en/Views/Home.json"
+    label: "Home"
+    name: "Home"
+    fields:
+    - {label: "jumbotronTitle", name: "jumbotronTitle", widget: "string"}
