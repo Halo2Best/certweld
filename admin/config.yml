@@ -11,11 +11,12 @@ collections:
   label: Layouts
 
   files:
+
   - file: src/lang/en/Layout/View.json
     label: View
     name: View
     fields:
-      label: Views or Pages
+      label: Items
       name: items
       widget: list
       fields:
