@@ -24,18 +24,6 @@ collections:
       - {label: Text, name: text, widget: string}
       - {label: Icon, name: icon, widget: string}
 
-  - file: src/lang/en/Home.json
-    label: Home
-    name: Home
-    fields:
-    - {label: Title, name: title, widget: string}
-    - {label: Footer Text, name: footer, widget: string}
-    - {label: Help Text, name: needHelp, widget: string}
-    - label:
-      name: drawerItems
-      widget: list
-      default: ["Inspire"]
-
   - file: src/lang/en/Layout/Footer.json
     label: Footer
     name: Footer
