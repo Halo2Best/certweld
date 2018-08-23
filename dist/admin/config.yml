@@ -16,8 +16,9 @@ collections:
     fields:
     - {label: Jumbotron Title, name: jumbotronTitle, widget: string}
     - {label: Jumbotron Sub Title, name: jumbotronSubTitle, widget: string}
+    - {label: Testimonial Title, name: testimonialsTitle, widget: string}
     - label: Testimonials
-      name: testimonialsTitle
+      name: testimonials
       widget: list
       fields:
       - {label: Author, name: author, widget: string}
