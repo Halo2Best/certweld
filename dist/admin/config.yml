@@ -6,12 +6,12 @@ publish_mode: editorial_workflow
 media_folder: "static"
 public_folder: ""
 
-collections:
-- name: "pages"
-  label: "Pages"
-  files:
-  - file: "src/lang/en/Views/Home.json"
-    label: "Home"
-    name: "Home"
-    fields:
-    - {label: "jumbotronTitle", name: "jumbotronTitle", widget: "string"}
+#collections:
+#- name: "pages"
+#  label: "Pages"
+#  files:
+#  - file: "src/lang/en/Views/Home.json"
+#    label: "Home"
+#    name: "Home"
+#    fields:
+#    - {label: "jumbotronTitle", name: "jumbotronTitle", widget: "string"}
