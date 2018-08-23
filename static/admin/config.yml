@@ -11,7 +11,7 @@ collections:
   label: "Pages"
   files:
   - file: "src/lang/en/Views/Home.json"
-    label: "About"
-    name: "about"
+    label: "Home"
+    name: "Home"
     fields:
-    - {label: "jumbotronTitle", name: "jumbotronTitle", widget: "string", default: "home-page"}
+    - {label: "jumbotronTitle", name: "jumbotronTitle", widget: "string"}
