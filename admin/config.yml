@@ -16,172 +16,172 @@ collections:
     name: View
     widget: list
     fields:
-      - {label: Route, name: to, widget: string}
-      - {label: Text, name: text, widget: string}
-      - {label: Icon, name: icon, widget: string}
+    - {label: Route, name: to, widget: string}
+    - {label: Text, name: text, widget: string}
+    - {label: Icon, name: icon, widget: string}
 
   - file: src/lang/en/Home.json
     label: Home
     name: Home
     fields:
-      - {label: Title, name: title, widget: string}
-      - {label: Footer Text, name: footer, widget: string}
-      - {label: Help Text, name: needHelp, widget: string}
-      - label:
-        name: drawerItems
-        widget: list
-        default: ["Inspire"]
+    - {label: Title, name: title, widget: string}
+    - {label: Footer Text, name: footer, widget: string}
+    - {label: Help Text, name: needHelp, widget: string}
+    - label:
+      name: drawerItems
+      widget: list
+      default: ["Inspire"]
 
   - file: src/lang/en/Layout/Footer.json
     label: Footer
     name: Footer
     fields:
-      - {label: Company Name, name: company, widget: string}
-      - {label: Services Title, name: services, widget: string}
-      - {label: Projects Title, name: projects, widget: string}
-      - {label: Team Title, name: ourTeam, widget: string}
-      - {label: Community Title, name: communityCommitment, widget: string}
-      - {label: rights, name: rights, widget: string}
+    - {label: Company Name, name: company, widget: string}
+    - {label: Services Title, name: services, widget: string}
+    - {label: Projects Title, name: projects, widget: string}
+    - {label: Team Title, name: ourTeam, widget: string}
+    - {label: Community Title, name: communityCommitment, widget: string}
+    - {label: rights, name: rights, widget: string}
 
-      - label: Social Links
-        name: social
-        widget: list
+    - label: Social Links
+      name: social
+      widget: list
+      fields:
+      - {label: Icon, name: icon, widget: string}
+      - {label: Text, name: text, widget: string}
+      - {label: To, name: to, widget: string}
+
+    - label: Categories
+      name: categories
+      widget: list
+      fields:
+      - {label: Title, name: title, widget: string}
+      - label: Items
+        name: items
+        widget: object
         fields:
         - {label: Icon, name: icon, widget: string}
-        - {label: Text, name: text, widget: string}
-        - {label: To, name: to, widget: string}
-
-      - label: Categories
-        name: categories
-        widget: list
-        fields:
-        - {label: Title, name: title, widget: string}
-        - label: Items
-          name: items
-          widget: object
-          fields:
-            - {label: Icon, name: icon, widget: string}
-            - {label: Link, name: href, widget: string}
-            - {label: Title, name: text, widget: string}
+        - {label: Link, name: href, widget: string}
+        - {label: Title, name: text, widget: string}
 
   - file: src/lang/en/Views/Home.json
     label: Home Page
     name: Home
     fields:
-      - {label: Jumbotron Title, name: jumbotronTitle, widget: string}
-      - {label: Jumbotron Sub Title, name: jumbotronSubTitle, widget: string}
-      - {label: Testimonial Title, name: testimonialsTitle, widget: string}
-      - {label: Button Text, name: submit, widget: string}
-      - label: Testimonials
-        name: testimonials
-        widget: list
-        fields:
-        - {label: Author, name: author, widget: string}
-        - {label: Title, name: title, widget: string}
-        - {label: Quote, name: quote, widget: string}
+    - {label: Jumbotron Title, name: jumbotronTitle, widget: string}
+    - {label: Jumbotron Sub Title, name: jumbotronSubTitle, widget: string}
+    - {label: Testimonial Title, name: testimonialsTitle, widget: string}
+    - {label: Button Text, name: submit, widget: string}
+    - label: Testimonials
+      name: testimonials
+      widget: list
+      fields:
+      - {label: Author, name: author, widget: string}
+      - {label: Title, name: title, widget: string}
+      - {label: Quote, name: quote, widget: string}
     - label: Card Features
       name: cardFeatures
       widget: list
       fields:
-        - {label: Name, name: name, widget: string}
-        - {label: Title, name: title, widget: string}
-        - {label: Text, name: text, widget: string}
-        - {label: Sub text, name: subText, widget: string}
-        - {label: Image URL, name: img, widget: string}
-        - {label: Call To Action, name: callToAction, widget: string}
+      - {label: Name, name: name, widget: string}
+      - {label: Title, name: title, widget: string}
+      - {label: Text, name: text, widget: string}
+      - {label: Sub text, name: subText, widget: string}
+      - {label: Image URL, name: img, widget: string}
+      - {label: Call To Action, name: callToAction, widget: string}
 
   - file: src/lang/en/Views/Projects.json
     label: Projects
     name: Projects
     fields:
-      - {label: Jumbotron Title, name: jumbotronTitle, widget: string}
-      - {label: Jumbotron Sub Title, name: jumbotronSubTitle, widget: string}
-      - {label: Testimonial Title, name: testimonialsTitle, widget: string}
-      - label: Project List
-        name: items
-        widget: list
+    - {label: Jumbotron Title, name: jumbotronTitle, widget: string}
+    - {label: Jumbotron Sub Title, name: jumbotronSubTitle, widget: string}
+    - {label: Testimonial Title, name: testimonialsTitle, widget: string}
+    - label: Project List
+      name: items
+      widget: list
+      fields:
+      - {label: Heading 1, name: heading1, widget: string}
+      - {label: Heading 2, name: headingText1, widget: string}
+      - {label: Heading 3, name: heading2, widget: string}
+      - {label: Heading 4, name: headingText2a, widget: string}
+      - {label: Image, name: image, widget: string}
+      - label: Testimonial
+        name: testimonial
+        widget: object
         fields:
-        - {label: Heading 1, name: heading1, widget: string}
-        - {label: Heading 2, name: headingText1, widget: string}
-        - {label: Heading 3, name: heading2, widget: string}
-        - {label: Heading 4, name: headingText2a, widget: string}
-        - {label: Image, name: image, widget: string}
-        - label: Testimonial
-          name: testimonial
-          widget: object
-          fields:
-          - {label: Author, name: author, widget: string}
-          - {label: Title, name: title, widget: string}
-          - {label: Quote, name: quote, widget: string}
+        - {label: Author, name: author, widget: string}
+        - {label: Title, name: title, widget: string}
+        - {label: Quote, name: quote, widget: string}
 
   - file: src/lang/en/Views/Services.json
     label: Services
     name: Services
     fields:
-      - {label: Jumbotron Title, name: jumbotronTitle, widget: string}
-      - {label: Jumbotron Sub Title, name: jumbotronSubTitle, widget: string}
-      - {label: Testimonial Title, name: testimonialsTitle, widget: string}
-      - label: Project List
-        name: items
-        widget: list
+    - {label: Jumbotron Title, name: jumbotronTitle, widget: string}
+    - {label: Jumbotron Sub Title, name: jumbotronSubTitle, widget: string}
+    - {label: Testimonial Title, name: testimonialsTitle, widget: string}
+    - label: Project List
+      name: items
+      widget: list
+      fields:
+      - {label: Heading 1, name: heading1, widget: string}
+      - {label: Heading 2, name: headingText1, widget: string}
+      - {label: Heading 3, name: heading2, widget: string}
+      - {label: Heading 4, name: headingText2a, widget: string}
+      - {label: Image, name: image, widget: string}
+      - label: Testimonial
+        name: testimonial
+        widget: object
         fields:
-        - {label: Heading 1, name: heading1, widget: string}
-        - {label: Heading 2, name: headingText1, widget: string}
-        - {label: Heading 3, name: heading2, widget: string}
-        - {label: Heading 4, name: headingText2a, widget: string}
-        - {label: Image, name: image, widget: string}
-        - label: Testimonial
-          name: testimonial
-          widget: object
-          fields:
-          - {label: Author, name: author, widget: string}
-          - {label: Title, name: title, widget: string}
-          - {label: Quote, name: quote, widget: string}
+        - {label: Author, name: author, widget: string}
+        - {label: Title, name: title, widget: string}
+        - {label: Quote, name: quote, widget: string}
 
   - file: src/lang/en/Views/Contact.json
     label: Contact
     name: Contact
     fields:
-      - {label: Jumbotron Title, name: jumbotronTitle, widget: string}
-      - {label: Jumbotron Sub Title, name: jumbotronSubTitle, widget: string}
-      - {label: Heading 1, name: heading1, widget: string}
-      - {label: Heading 2, name: headingText1, widget: string}
-      - {label: Heading 3, name: headingText2, widget: string}
-      - {label: Phone, name: phone, widget: string}
-      - {label: Address, name: address, widget: string}
-      - {label: City, name: cityState, widget: string}
-      - {label: ZIP, name: zip, widget: string}
-      - label: Opening Hours
-        name: hours
+    - {label: Jumbotron Title, name: jumbotronTitle, widget: string}
+    - {label: Jumbotron Sub Title, name: jumbotronSubTitle, widget: string}
+    - {label: Heading 1, name: heading1, widget: string}
+    - {label: Heading 2, name: headingText1, widget: string}
+    - {label: Heading 3, name: headingText2, widget: string}
+    - {label: Phone, name: phone, widget: string}
+    - {label: Address, name: address, widget: string}
+    - {label: City, name: cityState, widget: string}
+    - {label: ZIP, name: zip, widget: string}
+    - label: Opening Hours
+      name: hours
+      widget: object
+      fields:
+      - {label: Weekdays, name: weekday, widget: string}
+      - {label: Weekend, name: weekend, widget: string}
+    - label: Map
+      name: map
+      widget: object
+      fields:
+      - {label: Name, name: zoom, widget: string}
+      - label: Center
+        name: center
         widget: object
         fields:
-        - {label: Weekdays, name: weekday, widget: string}
-        - {label: Weekend, name: weekend, widget: string}
-      - label: Map
-        name: map
+        - {label: Latitude, name: lat, widget: string}
+        - {label: Longditude, name: lng, widget: string}
+      - label: Markers
+        name: markers
         widget: object
         fields:
-        - {label: Name, name: zoom, widget: string}
-        - label: Center
-          name: center
-          widget: object
-          fields:
-            - {label: Latitude, name: lat, widget: string}
-            - {label: Longditude, name: lng, widget: string}
-        - label: Markers
-          name: markers
-          widget: object
-          fields:
-            - {label: Title, name: title, widget: string}
-      - label: People
-        name: people
-        widget: list
-        fields:
-        - label: Title
-          name: title
-          widget: object
-          - {label: Name, name: name, widget: string}
-          - {label: Title, name: title, widget: string}
-          - {label: Mobile, name: mobile, widget: string}
-          - {label: Email, name: email, widget: string}
+        - {label: Title, name: title, widget: string}
+    - label: People
+      name: people
+      widget: list
+      fields:
+      - label: Title
+        name: title
+        widget: object
+        - {label: Name, name: name, widget: string}
+        - {label: Title, name: title, widget: string}
+        - {label: Mobile, name: mobile, widget: string}
+        - {label: Email, name: email, widget: string}
 
