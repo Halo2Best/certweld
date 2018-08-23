@@ -120,7 +120,6 @@ collections:
     fields:
     - {label: Jumbotron Title, name: jumbotronTitle, widget: string}
     - {label: Jumbotron Sub Title, name: jumbotronSubTitle, widget: string}
-    - {label: Testimonial Title, name: testimonialsTitle, widget: string}
     - label: Project List
       name: items
       widget: list
@@ -130,13 +129,6 @@ collections:
       - {label: Heading 3, name: heading2, widget: string}
       - {label: Heading 4, name: headingText2a, widget: string}
       - {label: Image, name: image, widget: string}
-      - label: Testimonial
-        name: testimonial
-        widget: object
-        fields:
-        - {label: Author, name: author, widget: string}
-        - {label: Title, name: title, widget: string}
-        - {label: Quote, name: quote, widget: string}
 
   - file: src/lang/en/Views/Contact.json
     label: Contact
