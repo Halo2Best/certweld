@@ -100,7 +100,6 @@ collections:
     fields:
     - {label: Jumbotron Title, name: jumbotronTitle, widget: string}
     - {label: Jumbotron Sub Title, name: jumbotronSubTitle, widget: string}
-    - {label: Testimonial Title, name: testimonialsTitle, widget: string}
     - label: Project List
       name: items
       widget: list
@@ -157,7 +156,7 @@ collections:
       name: map
       widget: object
       fields:
-      - {label: Name, name: zoom, widget: string}
+      - {label: Zoom, name: zoom, widget: string}
       - label: Center
         name: center
         widget: object
@@ -166,7 +165,7 @@ collections:
         - {label: Longditude, name: lng, widget: string}
       - label: Markers
         name: markers
-        widget: object
+        widget: list
         fields:
         - {label: Title, name: title, widget: string}
     - label: People
