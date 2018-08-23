@@ -1,13 +1,5 @@
 <template>
   <div>
-    <!--<v-container>-->
-      <!--<v-layout>-->
-        <!--<v-flex align-center text-xs-center>-->
-          <!--<h1 class="mb-3">OFFERING A WEALTH OF ENGINEERING EXPERIENCE AND KNOWLEDGE</h1>-->
-          <!--<h3>Certified Welding is the right choice for you</h3>-->
-        <!--</v-flex>-->
-      <!--</v-layout>-->
-    <!--</v-container>-->
     <v-container fill-height class="max-view-width">
       <v-layout
         justify-center
@@ -29,6 +21,7 @@
       class="mt-5 bg-gradient elevation-6"
     >
       <v-container
+        pa-5
         fill-height
         grid-list-xl
       >
@@ -39,8 +32,8 @@
 
         >
           <v-flex
-            xs10
-            md6
+            xs12
+            md8
 
           >
             <alpha-testimonial

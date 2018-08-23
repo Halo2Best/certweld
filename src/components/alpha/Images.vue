@@ -39,7 +39,7 @@
         ></v-carousel-item>
       </v-carousel>
     </v-dialog>
-    <v-tabs class="mb-5 container">
+    <v-tabs class="mb-3 container pt-0">
       <v-tab
         v-for="(category, i) in categories"
         :key="i"

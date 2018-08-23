@@ -1,5 +1,9 @@
 <template>
   <v-app v-scroll="onScroll">
+    <v-progress-linear
+      height="3"
+      :indeterminate="!lazyLoaded"
+    ></v-progress-linear>
     <core-toolbar />
 
     <core-drawer />
@@ -41,6 +45,11 @@
         }, 3000)
       }
     },
+    computed: {
+      lazyLoaded () {
+        return this.getLazy()
+      }
+    },
     methods: {
       ...mapMutations('app', ['setLazyLoaded']),
       ...mapGetters('app', ['getLazy']),
@@ -57,6 +66,12 @@
 </script>
 
 <style lang="stylus">
+
+  .v-progress-linear
+    position: absolute;
+    top: 0
+    left: 0
+    margin-top 0
 
   .q-fade-transition
     &-leave-active
