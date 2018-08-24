@@ -17,9 +17,9 @@
       <v-flex
         xs12
         sm5
-        md6
+        md3
         mb-3
-        lg3
+        lg2
         pa-0
         v-for="(item, i) in items"
         :class="[$vuetify.breakpoint.smAndDown ? 'pa-2' : 'mi mi--' + i]"
@@ -98,6 +98,9 @@
 </script>
 
 <style scoped lang="stylus">
+  .max-view-width
+    width: 1600px !important
+
   .min-90
     min-height 90vh
     align-items center
