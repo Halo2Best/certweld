@@ -27,8 +27,8 @@
           fill-height
           flat
           tile
-          dark
-          class="grey darken-3 elevation-4"
+          light
+          class="elevation-4"
           @mouseover="hoverIn"
           @mouseout="hoverOut"
         >
@@ -40,11 +40,14 @@
             :class="{'fade-in': lazyLoaded}"
           />
           <v-flex pa-4>
-          <v-card-title class="title text-lg-center pa-0 mb-3" v-text="feature.title"/>
+          <v-card-title class="title text-lg-center pa-0 mb-3" prepend-icon="build">
+            <v-icon class="mr-2">{{feature.icon}}</v-icon>{{feature.title}}
+          </v-card-title>
           <v-card-text class="pa-0 mb-2" v-text="feature.text"/>
           <v-card-text class="pa-0 pb-5" v-text="feature.subText"/>
           <v-card-actions class="pa-0">
             <v-btn
+              dark
               :aria-label="feature.callToAction + ' button'"
               @click="direct(feature)">
               {{feature.callToAction}}
@@ -75,7 +78,7 @@
         return this.$vuetify.breakpoint.smAndDown
       },
       cardHeight () {
-        return this.$vuetify.breakpoint.mdAndDown ? '200px' : '300px'
+        return this.$vuetify.breakpoint.mdAndDown ? '200px' : '250px'
       }
     },
 
@@ -105,6 +108,9 @@
 </script>
 
 <style lang="stylus" scoped>
+
+  .application .theme--light.v-card
+    background: rgba(232, 232, 232, 0.5);
 
   .invisible
     transition opacity ease-in 1s

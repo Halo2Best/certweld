@@ -5,7 +5,7 @@
     pb-4
     d-flex
     justify-center
-    class="max-view-width"
+    class="max-view-width min-90"
   >
     <v-layout
       row
@@ -98,6 +98,10 @@
 </script>
 
 <style scoped lang="stylus">
+  .min-90
+    min-height 90vh
+    align-items center
+
   .min-h
     min-height: 150px
   .mi

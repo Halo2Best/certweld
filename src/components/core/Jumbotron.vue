@@ -59,8 +59,12 @@
     }),
 
     methods: {
-      scrollDown () {
-        let pos = window.innerHeight * 0.65
+      scrollDown (e) {
+        let pos = window.innerHeight
+        let tBHeight = document.querySelector('.v-toolbar')
+        tBHeight = tBHeight.getBoundingClientRect().height
+        pos = pos - tBHeight
+        this.current = e
         this.scrolled = true
         TweenMax.to(window, 0.7, {delay: 0.2, scrollTo: {y: pos, autoKill: false}})
       }
@@ -190,6 +194,6 @@
     width 100%
 
   .vh
-    height 80vh !important
+    height 100vh !important
 
 </style>

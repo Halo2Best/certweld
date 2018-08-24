@@ -4,7 +4,6 @@ backend:
 
 publish_mode: editorial_workflow
 media_folder: static
-public_folder:
 
 collections:
 - name: layouts
@@ -84,6 +83,7 @@ collections:
       - {label: Sub text, name: subText, widget: string}
       - {label: Image URL, name: img, widget: string}
       - {label: Call To Action, name: callToAction, widget: string}
+      - {label: Icon, name: icon, widget: string}
 
   - file: src/lang/en/Views/Projects.json
     label: Projects
