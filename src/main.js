@@ -1,3 +1,4 @@
+/* eslint-disable no-undef */
 // The Vue build version to load with the `import` command
 // (runtime-only or standalone) has been set in webpack.base.conf with an alias.
 import Vue from 'vue'
@@ -41,7 +42,39 @@ Vue.mixin({
         this.audio = this.audio || new Audio('/static/sound/click.mp3')
         this.audio.play()
       },
-      md: new MobileDetect(window.navigator.userAgent)
+      md: new MobileDetect(window.navigator.userAgent),
+      scroll () {
+        let current = window.pageYOffset
+        let pos = window.innerHeight
+        let tBHeight = document.querySelector('.v-toolbar')
+        tBHeight = tBHeight.getBoundingClientRect().height
+        pos = pos - tBHeight + current
+        this.scrolled = true
+        pos = pos + current
+        TweenMax.to(window, 0.7, {
+          onStart: ($this) => {
+            $this.scrolling = true
+          },
+          onStartParams: [this],
+          onComplete: ($this) => {
+            setTimeout(() => {
+              $this.scrolling = false
+            }, 100)
+          },
+          onCompleteParams: [this],
+          delay: 0.2,
+          scrollTo: {
+            y: pos,
+            autoKill: false
+          }
+        })
+        // e.preventDefault()
+        // e.stopPropagation()
+        // if (!e) { e = window.event } /* IE7, IE8, Chrome, Safari */
+        // if (e.preventDefault) { e.preventDefault() } /* Chrome, Safari, Firefox */
+        // e.returnValue = false /* IE7, IE8 */
+        // return false
+      }
     }
   }
 })

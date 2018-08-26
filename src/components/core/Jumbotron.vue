@@ -38,7 +38,7 @@
               class="mt-5"
               :class="{'theme--dark' : scrolled}"
               @click="scrollDown">
-              More Here
+              {{pathName()}}<v-icon class="ml-2">arrow_downward</v-icon>
             </v-btn>
           </v-flex>
         </v-layout>
@@ -60,13 +60,15 @@
 
     methods: {
       scrollDown (e) {
-        let pos = window.innerHeight
-        let tBHeight = document.querySelector('.v-toolbar')
-        tBHeight = tBHeight.getBoundingClientRect().height
-        pos = pos - tBHeight
-        this.current = e
-        this.scrolled = true
-        TweenMax.to(window, 0.7, {delay: 0.2, scrollTo: {y: pos, autoKill: false}})
+        this.scrolling = false
+        this.scroll(e, true)
+      },
+      pathName () {
+        let name = this.$route.name
+        if (name.toLowerCase() === 'home') {
+          name = 'More Below'
+        }
+        return name
       }
     },
     watch: {

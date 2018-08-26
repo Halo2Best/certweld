@@ -5,7 +5,7 @@
     pb-4
     d-flex
     justify-center
-    class="max-view-width min-90"
+    class="max-view-width"
   >
     <v-layout
       row
@@ -16,10 +16,10 @@
     >
       <v-flex
         xs12
-        sm5
+        sm6
         md3
         mb-3
-        lg2
+        lg3
         pa-0
         v-for="(item, i) in items"
         :class="[$vuetify.breakpoint.smAndDown ? 'pa-2' : 'mi mi--' + i]"
@@ -99,7 +99,7 @@
 
 <style scoped lang="stylus">
   .max-view-width
-    width: 1600px !important
+    max-width: 1600px !important
 
   .min-90
     min-height 90vh

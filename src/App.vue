@@ -1,5 +1,5 @@
 <template>
-  <v-app v-scroll="onScroll">
+  <v-app>
     <v-progress-linear
       height="3"
       :indeterminate="!lazyLoaded"
@@ -17,7 +17,7 @@
 </template>
 
 <script>
-  /* eslint-disable no-undef */
+  /* eslint-disable no-undef,spaced-comment */
 
   import { mapMutations, mapGetters } from 'vuex'
   export default {
@@ -53,19 +53,44 @@
     methods: {
       ...mapMutations('app', ['setLazyLoaded']),
       ...mapGetters('app', ['getLazy']),
-      onScroll () {
+      onScroll (e) {
         if (this.lazyTriggered && !this.getLazy()) {
           this.setLazyLoaded(true)
         }
         this.lazyTriggered = (window.pageYOffset ||
           document.documentElement.scrollTop || 0) >
           (50)
+        if (!this.scrolled) {
+          if (!e) {
+            e = window.event
+          }
+          /* IE7, IE8, Chrome, Safari */
+          if (e.preventDefault) {
+            e.preventDefault()
+          }
+          /* Chrome, Safari, Firefox */
+          e.returnValue = false
+          /* IE7, IE8 */
+          this.scroll(e)
+        }
       }
     }
   }
 </script>
 
 <style lang="stylus">
+  html {
+    overflow: scroll;
+    overflow-x: hidden;
+  }
+  ::-webkit-scrollbar {
+    width: 0px;  /* remove scrollbar space */
+    background: transparent;  /* optional: just make scrollbar invisible */
+  }
+  /* optional: show position indicator in red */
+  ::-webkit-scrollbar-thumb {
+    background: #FF0000;
+  }
 
   .v-progress-linear
     position: absolute;
