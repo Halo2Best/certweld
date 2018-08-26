@@ -14,7 +14,7 @@ collections:
   - file: src/lang/en/Layout/View.json
     label: View
     name: View
-    widget: object
+    widget: list
     fields:
       label: Items
       name: items
