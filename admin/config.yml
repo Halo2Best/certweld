@@ -14,6 +14,7 @@ collections:
   - file: src/lang/en/Layout/View.json
     label: View
     name: View
+    widget: object
     fields:
       label: Items
       name: items
@@ -62,6 +63,7 @@ collections:
   - file: src/lang/en/Views/Home.json
     label: Home
     name: Home
+    widget: object
     fields:
     - {label: Jumbotron Title, name: jumbotronTitle, widget: string}
     - {label: Jumbotron Sub Title, name: jumbotronSubTitle, widget: string}
@@ -88,6 +90,7 @@ collections:
   - file: src/lang/en/Views/Projects.json
     label: Projects
     name: Projects
+    widget: object
     fields:
     - {label: Jumbotron Title, name: jumbotronTitle, widget: string}
     - {label: Jumbotron Sub Title, name: jumbotronSubTitle, widget: string}
@@ -111,6 +114,7 @@ collections:
   - file: src/lang/en/Views/Services.json
     label: Services
     name: Services
+    widget: object
     fields:
     - {label: Jumbotron Title, name: jumbotronTitle, widget: string}
     - {label: Jumbotron Sub Title, name: jumbotronSubTitle, widget: string}
@@ -127,6 +131,7 @@ collections:
   - file: src/lang/en/Views/Contact.json
     label: Contact
     name: Contact
+    widget: object
     fields:
     - {label: Jumbotron Title, name: jumbotronTitle, widget: string}
     - {label: Jumbotron Sub Title, name: jumbotronSubTitle, widget: string}
